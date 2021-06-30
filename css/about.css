@@ -607,6 +607,12 @@ body {
     background-size: cover;
   }
 
+  .commitment--text{
+    width: 540px;
+    font-size: 16px;
+    line-height: 26px;
+  }
+
   .uncompromising {
     background-color: #2C343E;
     border-radius: 10px;
