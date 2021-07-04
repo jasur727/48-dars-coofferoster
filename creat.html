@@ -11,13 +11,13 @@
 </head>
 
 <body>
-  <header class="header">
+  <header class="header js-header-button">
     <div class="container">
       <div class="header-section">
         <a class="header-logo__link" href="#">
           <img class="header-logo__img" src="./img/logo.svg" alt="logo">
         </a>
-        <button class="header-button js-header-button"></button>
+        <button class="header-button header-section--open"></button>
 
         <nav class="header-nav">
           <ul class="header-nav__list">
@@ -89,40 +89,40 @@
   <section class="form__wrapper">
     <ol class="preferences">
 
-      <li class="preferences__item">
+      <li class="preferences__item preferences__item2">
         <div class="preferences__content">
-          <a class="preferences__link" href="#">Preferences</a>
+          <a class="preferences__link" href="#preferences-list">Preferences</a>
         </div>
       </li>
   
       <li class="preferences__item">
         <div class="preferences__content">
-          <a class="preferences__link" href="#">Bean Type</a>
+          <a class="preferences__link" href="#bean-type">Bean Type</a>
         </div>
       </li>
   
       <li class="preferences__item">
         <div class="preferences__content">
-          <a class="preferences__link" href="#">Quantity</a>
+          <a class="preferences__link" href="#quantity">Quantity</a>
         </div>
       </li>
   
       <li class="preferences__item">
         <div class="preferences__content">
-          <a class="preferences__link" href="#">Grind Option</a>
+          <a class="preferences__link" href="#grind-option">Grind Option</a>
         </div>
       </li>
   
       <li class="preferences__item">
         <div class="preferences__content">
-          <a class="preferences__link" href="#">Deliveries</a>
+          <a class="preferences__link" href="#deliveries">Deliveries</a>
         </div>
       </li>
     </ol>
   
     <div class="how-you-drink">
       <div class="container">
-        <div class="how__drink">
+        <section class="how__drink" id="preferences-list">
           <div class="how__drink--item">
             <h2 class="how__drink--heading">How do you drink your coffee?</h2>
             <button type="button" class="how__drink--button">
@@ -135,7 +135,7 @@
             <div class="faq__form">
               <div class="faq-from__group">
                 <label class="how__drink--label">
-                  <input class="how__drink--input visually-hidden" type="radio">
+                  <input class="how__drink-input visually-hidden" type="radio" name="name1">
                   <div class="how__drink--content">
                     <span class="capsule capsule2">Capsule</span>
                     <span class="compatible compatible2">Compatible with Nespresso systems and similar brewers</span>
@@ -143,9 +143,9 @@
                 </label>
               </div>
   
-              <div class="faq-from__group faq-from__chacked">
+              <div class="faq-from__group">
                 <label class="how__drink--label">
-                  <input class="how__drink--input visually-hidden" type="radio">
+                  <input class="how__drink-input visually-hidden" type="radio" name="name1">
                   <div class="how__drink--content">
                     <span class="capsule capsule2">Filter</span>
                     <span class="compatible compatible2">For pour over or drip methods like Aeropress, Chemex, and
@@ -156,7 +156,7 @@
   
               <div class="faq-from__group">
                 <label class="how__drink--label">
-                  <input class="how__drink--input visually-hidden" type="radio">
+                  <input class="how__drink-input visually-hidden" type="radio" name="name1">
                   <div class="how__drink--content">
                     <span class="capsule capsule2">Espresso</span>
                     <span class="compatible compatible2">Dense and finely ground beans for an intense, flavorful
@@ -166,9 +166,9 @@
               </div>
             </div>
           </form>
-        </div>
+        </section>
   
-        <div class="how__drink">
+        <section class="how__drink" id="deliveries">
           <div class="how__drink--item">
             <h2 class="how__drink--heading">What type of coffee?</h2>
             <button type="button" class="how__drink--button">
@@ -179,43 +179,40 @@
           <form action="https://echo.htmlacademy.ru" method="POST">
   
             <div class="faq__form">
-              <div class="faq-from__group">
-                <label class="how__drink--label">
-                  <input class="how__drink--input visually-hidden" type="radio">
-                  <div class="how__drink--content">
-                    <span class="capsule capsule2">Single Origin</span>
-                    <span class="compatible compatible2">Distinct, high quality coffee from a specific family-owned
-                      farm</span>
-                  </div>
-                </label>
-              </div>
-  
               <div class="faq-from__group faq-from__chacked">
                 <label class="how__drink--label">
-                  <input class="how__drink--input visually-hidden" type="radio">
+                  <input class="how__drink-input visually-hidden" type="radio" name="name5">
                   <div class="how__drink--content">
-                    <span class="capsule capsule2">Decaf</span>
-                    <span class="compatible compatible2">Just like regular coffee, except the caffeine has been
-                      removed</span>
+                    <span class="capsule capsule2">Single Origin</span>
+                    <span class="compatible compatible2">Distinct, high quality coffee from a specific family-owned farm</span>
                   </div>
                 </label>
               </div>
   
               <div class="faq-from__group">
                 <label class="how__drink--label">
-                  <input class="how__drink--input visually-hidden" type="radio">
+                  <input class="how__drink-input visually-hidden" type="radio" name="name5">
+                  <div class="how__drink--content">
+                    <span class="capsule capsule2">Decaf</span>
+                    <span class="compatible compatible2">Just like regular coffee, except the caffeine has been removed</span>
+                  </div>
+                </label>
+              </div>
+  
+              <div class="faq-from__group">
+                <label class="how__drink--label">
+                  <input class="how__drink-input visually-hidden" type="radio" name="name5">
                   <div class="how__drink--content">
                     <span class="capsule capsule2">Blended</span>
-                    <span class="compatible compatible2">Combination of two or three dark roasted beans of organic
-                      coffees</span>
+                    <span class="compatible compatible2">Combination of two or three dark roasted beans of organic coffees</span>
                   </div>
                 </label>
               </div>
             </div>
           </form>
-        </div>
+        </section>
   
-        <div class="how__drink">
+        <section class="how__drink" id="quantity">
           <div class="how__drink--item">
             <h2 class="how__drink--heading">How much would you like?</h2>
             <button type="button" class="how__drink--button">
@@ -226,9 +223,10 @@
           <form action="https://echo.htmlacademy.ru" method="POST">
   
             <div class="faq__form">
+            
               <div class="faq-from__group faq-from__chacked">
                 <label class="how__drink--label">
-                  <input class="how__drink--input visually-hidden" type="radio">
+                  <input class="how__drink-input visually-hidden" type="radio" name="name3">
                   <div class="how__drink--content">
                     <span class="capsule capsule2">250g</span>
                     <span class="compatible compatible2">Perfect for the solo drinker. Yields about 12 delicious
@@ -239,7 +237,7 @@
   
               <div class="faq-from__group">
                 <label class="how__drink--label">
-                  <input class="how__drink--input visually-hidden" type="radio">
+                  <input class="how__drink-input visually-hidden" type="radio" name="name3">
                   <div class="how__drink--content">
                     <span class="capsule capsule2">500g</span>
                     <span class="compatible compatible2">Perfect option for a couple. Yields about 40 delectable
@@ -250,7 +248,7 @@
   
               <div class="faq-from__group">
                 <label class="how__drink--label">
-                  <input class="how__drink--input visually-hidden" type="radio">
+                  <input class="how__drink-input visually-hidden" type="radio" name="name3">
                   <div class="how__drink--content">
                     <span class="capsule capsule2">1000g</span>
                     <span class="compatible compatible2">Perfect for offices and events. Yields about 90 delightful
@@ -260,9 +258,9 @@
               </div>
             </div>
           </form>
-        </div>
+        </section>
   
-        <div class="how__drink">
+        <section class="how__drink" id="grind-option">
           <div class="how__drink--item">
             <h2 class="how__drink--heading">Want us to grind them?</h2>
             <button type="button" class="how__drink--button">
@@ -275,7 +273,7 @@
             <div class="faq__form">
               <div class="faq-from__group">
                 <label class="how__drink--label">
-                  <input class="how__drink--input visually-hidden" type="radio">
+                  <input class="how__drink-input visually-hidden" type="radio" name="name4">
                   <div class="how__drink--content">
                     <span class="capsule capsule2">Wholebean</span>
                     <span class="compatible compatible2">Best choice if you cherish the full sensory experience</span>
@@ -285,7 +283,7 @@
   
               <div class="faq-from__group">
                 <label class="how__drink--label">
-                  <input class="how__drink--input visually-hidden" type="radio">
+                  <input class="how__drink-input visually-hidden" type="radio" name="name4">
                   <div class="how__drink--content">
                     <span class="capsule capsule2">Filter</span>
                     <span class="compatible compatible2">For drip or pour-over coffee methods such as V60 or
@@ -296,7 +294,7 @@
   
               <div class="faq-from__group faq-from__chacked">
                 <label class="how__drink--label">
-                  <input class="how__drink--input visually-hidden" type="radio">
+                  <input class="how__drink-input visually-hidden" type="radio" name="name4">
                   <div class="how__drink--content">
                     <span class="capsule capsule2">Cafetiére</span>
                     <span class="compatible compatible2">Course ground beans specially suited for french press
@@ -308,9 +306,9 @@
           </form>
   
   
-        </div>
+        </section>
   
-        <div class="how__drink">
+        <section class="how__drink" id="deliveries">
           <div class="how__drink--item">
             <h2 class="how__drink--heading">How often should we deliver?</h2>
             <button type="button" class="how__drink--button">
@@ -323,7 +321,7 @@
             <div class="faq__form">
               <div class="faq-from__group faq-from__chacked">
                 <label class="how__drink--label">
-                  <input class="how__drink--input visually-hidden" type="radio">
+                  <input class="how__drink-input visually-hidden" type="radio" name="name5">
                   <div class="how__drink--content">
                     <span class="capsule capsule2">Every week</span>
                     <span class="compatible compatible2">$7.20 per shipment. Includes free first-class shipping.</span>
@@ -333,7 +331,7 @@
   
               <div class="faq-from__group">
                 <label class="how__drink--label">
-                  <input class="how__drink--input visually-hidden" type="radio">
+                  <input class="how__drink-input visually-hidden" type="radio" name="name5">
                   <div class="how__drink--content">
                     <span class="capsule capsule2">Every 2 weeks</span>
                     <span class="compatible compatible2">$9.60 per shipment. Includes free priority shipping.</span>
@@ -343,7 +341,7 @@
   
               <div class="faq-from__group">
                 <label class="how__drink--label">
-                  <input class="how__drink--input visually-hidden" type="radio">
+                  <input class="how__drink-input visually-hidden" type="radio" name="name5">
                   <div class="how__drink--content">
                     <span class="capsule capsule2">Every month</span>
                     <span class="compatible compatible2">$12.00 per shipment. Includes free priority shipping.</span>
@@ -352,7 +350,7 @@
               </div>
             </div>
           </form>
-        </div>
+        </section>
       </div>
     </div>
   
@@ -427,6 +425,8 @@
       </div>
     </div>
   </footer>
+
+  <script src="./js/main.js"></script>
 </body>
 
 </html>

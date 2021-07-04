@@ -485,6 +485,7 @@ body {
 
   .header-nav__list {
     display: flex;
+    margin-top: -19px;
   }
 
   .header-nav__item {
