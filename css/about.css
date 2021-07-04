@@ -61,75 +61,74 @@ body {
 }
 
 /* SITE-HEADER */
-
-.site-header {
+.header-section {
   position: relative;
-  padding: 32px 24px;
+  z-index: 1;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  align-items: center;
+  padding-top: 32px;
+
 }
 
-.site-header__toggler {
-  border: none;
-  padding: 0;
-  background-color: transparent;
+.header-button {
   width: 16px;
-  height: 16px;
-  background-image: url('../img/burger.svg');
+  height: 15px;
+  background-image: url(../img/hamburger.svg);
   background-repeat: no-repeat;
-  background-position: center center;
-  background-size: contain;
+  border: none;
 }
 
-.header-open .site-header__toggler {
-  background-image: url('../img/close.svg');
+.header-section--open .header-button {
+  background-image: url(../img/close.svg);
+  background-color: none;
 
 }
 
-.site-nav {
-  transform: translateY(-1200px);
+.header-nav {
+  display: none;
   position: absolute;
   z-index: 1;
+  top: 100%;
   left: -24px;
   right: -24px;
-  top: 100%;
-  padding-left: 24px;
-  padding-right: 24px;
+  padding: 40px 24px;
   text-align: center;
-  background-image: linear-gradient(0deg, rgba(254, 252, 247, 0.504981) 0%, #FEFCF7 55.94%);
-  padding-top: 8px;
-  padding-bottom: 40px;
   height: calc(100vh - 90px);
-  transition: transform 0.5s ease;
+  background-image: linear-gradient(0deg, rgba(254, 252, 247, 0.5) 0%, #FEFCF7 55.94%);
 }
 
-.site-nav__item {
-  margin-top: 32px;
+.header-section--open .header-nav {
+  display: block;
 }
 
-.site-nav__list {
+.header-nav__list {
   margin: 0;
   padding: 0;
+}
+
+.header-nav__item {
   list-style: none;
 }
 
+.header-nav__item:not(:last-child) {
+  margin-bottom: 32px;
+}
 
-.site-nav__link {
-  font-family: "Barlow", sans-serif;
+.header-nav__link {
+  display: inline-block;
   text-decoration: none;
-  font-style: normal;
   font-weight: 900;
   font-size: 24px;
   line-height: 32px;
   text-align: center;
   color: #333D4B;
-  display: inline-block;
   cursor: pointer;
 }
 
-.header-open .site-nav {
-  transform: translateY(0);
+.header-nav__link:active {
+  opacity: 0.6;
 }
 
 /* HERO */

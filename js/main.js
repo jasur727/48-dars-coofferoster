@@ -1,4 +1,4 @@
-var elHeaderSection = document.querySelector('.header')
+var elHeaderSection = document.querySelector('.header');
 var elHeaderButton = document.querySelector('.js-header-button');
 
 
