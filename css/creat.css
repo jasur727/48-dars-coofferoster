@@ -487,7 +487,6 @@ body {
     flex-direction: column;
     height: 0;
     padding: 0;
-
   }
 
   .header-nav__list {
@@ -511,6 +510,11 @@ body {
     letter-spacing: 0.9px;
     text-transform: uppercase;
     color: #83888F;
+    transition: color 0.5s ease;
+  }
+
+  .header-nav__link:hover{
+    color: #333D4B;
   }
 
   /* HERO */
@@ -734,7 +738,6 @@ body {
     display: block;
     counter-reset: work-process;
     margin-right: 72px;
-    margin-left: 165px;
   }
 
   .preferences__item2 {
@@ -844,6 +847,10 @@ body {
     text-align: right;
   }
 
+  .summary__content{
+    margin-right: 0;
+  }
+
   /* FOOTER */
   .site-footer {
     margin-top: 168px;
@@ -854,7 +861,7 @@ body {
     flex-direction: row;
     justify-content: space-between;
     align-items: baseline;
-    padding: 48px 85px;
+    padding: 0 85px;
   }
 
   .logo-wrapper {

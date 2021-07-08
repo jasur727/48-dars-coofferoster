@@ -60,7 +60,8 @@ body {
   margin-right: auto;
 }
 
-/* SITE-HEADER */
+/* HEADER */
+
 .header-section {
   position: relative;
   z-index: 1;
@@ -396,48 +397,54 @@ body {
 
 @media only screen and (min-width: 768px) {
 
-  .container {
-    width: 100%;
-    min-width: 768px;
-    padding-left: 40px;
-    padding-right: 40px;
-    margin-left: auto;
-    margin-right: auto;
+  .header-logo__img {
+    width: 235px;
   }
 
-  .site-header__toggler {
+  .header-section {
+    align-items: center;
+    display: flex;
+  }
+
+  .header-button {
     display: none;
   }
 
-  .site-nav {
+  .header-nav {
+    position: relative;
+    z-index: 1;
     display: block;
-    transform: none;
-    background-image: none;
+    flex-direction: column;
+    height: 0;
     padding: 0;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    padding-right: 40px;
-
   }
 
-  .site-nav__list {
-    display: block;
+  .header-nav__list {
     display: flex;
-    align-items: center;
-    justify-content: flex-end;
+    margin-top: -19px;
   }
 
-  .site-nav__link {
-    font-family: 'Barlow',sans-serif;
-    font-weight: bold;
+  .header-nav__item {
+    align-items: center;
+
+  }
+
+  .header-nav__item:not(:last-child) {
+    margin-right: 33px;
+    margin-bottom: 0;
+  }
+
+  .header-nav__link {
     font-size: 12px;
     line-height: 15px;
-    letter-spacing: 0.923077px;
+    letter-spacing: 0.9px;
     text-transform: uppercase;
     color: #83888F;
-    margin-left: 32px;
+    transition: color 0.5s ease;
+  }
+
+  .header-nav__link:hover{
+    color: #333D4B;
   }
 
   /* HERO */
@@ -576,10 +583,10 @@ body {
   .footer-list {
     display: flex;
     flex-direction: row;
-    justify-content: center;  
+    justify-content: center;
   }
 
-  .footer-item2{
+  .footer-item2 {
     padding: 0 32px;
   }
 
@@ -599,15 +606,15 @@ body {
     background-image: url("../img/bitmap-desktop.png");
   }
 
-  .hero-heading{
-    font-family: 'Fraunces 9pt',sans-serif;
+  .hero-heading {
+    font-family: 'Fraunces 9pt', sans-serif;
     font-size: 32px;
     line-height: 40px;
     color: #FEFCF7;
   }
 
-  .hero-text{
-    font-family: 'Barlow',sans-serif;
+  .hero-text {
+    font-family: 'Barlow', sans-serif;
     font-size: 15px;
     line-height: 25px;
     color: #FEFCF7;
@@ -622,9 +629,9 @@ body {
     background-size: cover;
   }
 
-  .commitment--text{
+  .commitment--text {
     width: 540px;
-    font-family: 'Barlow',sans-serif;
+    font-family: 'Barlow', sans-serif;
     font-size: 15px;
     line-height: 25px;
     color: #333D4B;
@@ -679,19 +686,19 @@ body {
 
   /* FOOTER */
 
-  .footer-content__wrapper{
+  .footer-content__wrapper {
     display: flex;
     justify-content: space-between;
     padding: 0 85px;
   }
 
-  .logo-wrapper{
+  .logo-wrapper {
     padding: 0;
     margin: 0;
-    margin-top: 54px;     
+    margin-top: 54px;
   }
 
-  .footer-list{
+  .footer-list {
     margin-top: 58px;
   }
 }
