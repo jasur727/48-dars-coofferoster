@@ -509,8 +509,8 @@ body {
   }
 
   .uncompromising-text {
-    padding-left: 24px;
-    padding-right: 24px;
+    padding-left: 100px;
+    padding-right: 128px;
     padding-bottom: 61px;
     font-size: 15px;
     line-height: 25px;
@@ -539,7 +539,11 @@ body {
 
   .countres--item {
     display: flex;
-    justify-content: space-between;
+    margin-left: -47px;
+  }
+
+  .countres--icon{
+    margin-left: 47px;
   }
 
   .countres--heading {
@@ -667,6 +671,7 @@ body {
 
   .wrapper {
     position: relative;
+    margin-left: 48px;
   }
 
   .wrapper::before {
@@ -675,7 +680,7 @@ body {
     position: absolute;
     width: 445px;
     height: 474px;
-    left: calc(50% - 1px);
+    left: calc(50% + 26px);
     top: -262px;
     background-image: url('../img/bitmap-coffee-bg.png');
     background-repeat: no-repeat;
